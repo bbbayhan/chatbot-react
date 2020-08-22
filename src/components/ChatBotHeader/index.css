@@ -1,0 +1,14 @@
+.image {
+  margin: 0 0 0 60px;
+  display: flex;
+  align-items: center;
+}
+.ant-page-header-rtl .image {
+  margin: 0 60px 0 0;
+}
+@media (max-width: 768px) {
+  .image {
+    flex: 100%;
+    margin: 24px 0 0;
+  }
+}

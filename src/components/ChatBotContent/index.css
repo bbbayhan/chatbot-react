@@ -1,0 +1,17 @@
+.bot {
+  text-align: left;
+}
+
+.user {
+  text-align: right;
+}
+
+.chatbot-responses {
+  padding: 6.5px 11px;
+}
+
+.chatbot-buttons {
+  padding: 0;
+  border: none;
+  outline: none;
+}

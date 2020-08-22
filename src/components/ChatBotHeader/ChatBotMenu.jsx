@@ -8,7 +8,7 @@ const menu = (
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href="http://www.alipay.com/"
+        href="https://1millionbot.com/politica-de-privacidad/"
       >
         Política de privacidad
       </a>
