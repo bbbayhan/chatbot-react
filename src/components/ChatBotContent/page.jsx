@@ -7,6 +7,10 @@ import "antd/dist/antd.css";
 import "./index.css";
 
 class ChatBotContent extends React.Component {
+  constructor(props) {
+    super();
+    console.log(props);
+  }
   render() {
     return (
       <div>

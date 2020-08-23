@@ -9,7 +9,11 @@
     "antd": "^4.5.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-redux": "^7.2.1",
+    "react-scripts": "3.4.3",
+    "redux": "^4.0.5",
+    "redux-promise-middleware": "^6.1.2",
+    "redux-promise-middleware-actions": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
