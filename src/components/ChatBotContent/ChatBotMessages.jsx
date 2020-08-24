@@ -1,7 +1,7 @@
 import React from "react";
-import { List, Avatar } from "antd";
+import { List, Avatar, BackTop, Card } from "antd";
 import "antd/dist/antd.css";
-import { BackTop } from "antd";
+const { Meta } = Card;
 
 const dataBot = [
   {
@@ -17,20 +17,33 @@ const dataBot = [
 
 export const ChatBotMessages = () => {
   return (
-    <List
-      itemLayout="horizontal"
-      dataSource={dataBot}
-      renderItem={(item) => (
-        <List.Item className="bot">
-          <List.Item.Meta
-            avatar={
-              <Avatar src="https://1millionbot.com/wp-content/uploads/2019/05/Pau.gif" />
-            }
-            title={item.title}
-            extra={<BackTop />}
+    <div>
+      <List
+        itemLayout="horizontal"
+        dataSource={dataBot}
+        renderItem={(item) => (
+          <List.Item className="bot">
+            <List.Item.Meta
+              avatar={
+                <Avatar src="https://1millionbot.com/wp-content/uploads/2019/05/Pau.gif" />
+              }
+              title={item.title}
+              extra={<BackTop />}
+            />
+          </List.Item>
+        )}
+      />
+      <Card
+        style={{ width: 120 }}
+        cover={
+          <img
+            alt="example"
+            src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
           />
-        </List.Item>
-      )}
-    />
+        }
+      >
+        <Meta title="Bot" description="bot.com" />
+      </Card>
+    </div>
   );
 };
