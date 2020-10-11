@@ -4,35 +4,34 @@ import "antd/dist/antd.css";
 
 import { CaretRightOutlined } from "@ant-design/icons";
 
-const buttonResponses = [
-  {
-    title: "Qué es un chatbot",
-  },
-  {
-    title: "Para qué sirve",
-  },
-  {
-    title: "Button 3",
-  },
-];
-
-function ButtonList(props) {
-  return props.responses.map((buttonResponse) => {
+const ButtonList = (buttonMessages) => {
+  const onClick = (buttonMessage) => {
+    return buttonMessage.answer;
+  };
+  return buttonMessages.responses.map((buttonMessage) => {
     return (
-      <Button type="primary" shape="round" size="large">
-        {buttonResponse.title}
+      <Button
+        id={buttonMessage.title}
+        type="primary"
+        shape="round"
+        size="large"
+        onClick={() => onClick(buttonMessage)}
+      >
+        {buttonMessage.title}
       </Button>
     );
   });
-}
-
-export const ChatButtonsResponses = () => {
-  return (
-    <div className="chatbot-responses">
-      <span>{"Estas son algunas de las cosas que me puedes preguntar:"}</span>
-      <br></br>
-      <ButtonList responses={buttonResponses} />
-      <CaretRightOutlined />
-    </div>
-  );
 };
+
+export class ChatButtonsResponses extends React.Component {
+  render() {
+    return (
+      <div className="chatbot-responses">
+        <span>{"Estas son algunas de las cosas que me puedes preguntar:"}</span>
+        <br></br>
+        <ButtonList responses={this.props.buttonMessages} />
+        <CaretRightOutlined />
+      </div>
+    );
+  }
+}

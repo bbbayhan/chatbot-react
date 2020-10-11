@@ -11,7 +11,8 @@ class ChatBotHeader extends React.Component {
         title="BotName"
         className="site-page-header"
         avatar={{
-          src: "https://1millionbot.com/wp-content/uploads/2019/05/Pau.gif",
+          src:
+            "https://i.pinimg.com/originals/0c/67/5a/0c675a8e1061478d2b7b21b330093444.gif",
         }}
         extra={<ChatBotMenu key="more" />}
       ></PageHeader>

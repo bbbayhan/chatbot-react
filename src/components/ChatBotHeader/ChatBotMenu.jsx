@@ -36,7 +36,7 @@ export class ChatBotMenu extends React.Component {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://1millionbot.com/politica-de-privacidad/"
+            href="https://es.wikipedia.org/wiki/Pol%C3%ADtica_de_privacidad"
           >
             Política de privacidad
           </a>
